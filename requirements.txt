@@ -1,0 +1,56 @@
+# =====================================================================
+# Synthetic Data Generation for Smart-Meter Household Load Profiles
+# CIS4006-N Advanced Practice — MSc Artificial Intelligence
+# Teesside University
+# ---------------------------------------------------------------------
+# IMPORTANT: install PyTorch SEPARATELY first (with CUDA 12.8 wheels for
+# your RTX 5060 / Blackwell GPU), then install this file.
+#
+# Step 1 (run before pip install -r requirements.txt):
+#   pip install torch torchvision torchaudio \
+#       --index-url https://download.pytorch.org/whl/cu128
+#
+# Step 2:
+#   pip install -r requirements.txt
+# =====================================================================
+
+# ---- Core scientific stack ----
+numpy>=1.26,<2.3
+pandas>=2.1,<2.3
+scipy>=1.11,<1.16
+
+# ---- Plotting ----
+matplotlib>=3.8,<3.11
+seaborn>=0.13,<0.14
+
+# ---- Machine learning ----
+scikit-learn>=1.4,<1.8
+
+# ---- Jupyter / notebook ecosystem ----
+jupyter>=1.0
+ipykernel>=6.29
+notebook>=7.0
+ipywidgets>=8.1
+nbformat>=5.10
+nbclient>=0.10
+
+# ---- Progress bars (used in training loops) ----
+tqdm>=4.66
+
+# ---- Pretty tables in notebook output ----
+tabulate>=0.9
+rich>=13.7
+
+# ---- Statistical / generative-model evaluation utilities ----
+statsmodels>=0.14
+POT>=0.9            # Python Optimal Transport — Wasserstein distance
+ot                  ; python_version < "0"   # placeholder, ignored
+
+# ---- Time-series helpers ----
+holidays>=0.50      # UK public holidays for calendar features
+
+# ---- Dataset download convenience ----
+requests>=2.31
+
+# ---- Reproducibility ----
+joblib>=1.3
